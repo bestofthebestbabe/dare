@@ -31,7 +31,6 @@ jobs:
         git add .
         git clean -f -d
         git commit -m "done!"
-        git push origin main
         ls
         
     - name: Push Change
