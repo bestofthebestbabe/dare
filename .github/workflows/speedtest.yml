@@ -29,5 +29,4 @@ jobs:
      
     - name: Run Lite Speedtest
       run: |
-        cd $GITHUB_WORKSPACE
-        sudo sh ./utils/speedtest/speedtest.sh
+        sudo sh $GITHUB_WORKSPACE/../utils/speedtest/speedtest.sh
