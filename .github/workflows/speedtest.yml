@@ -29,4 +29,8 @@ jobs:
      
     - name: Run Lite Speedtest
       run: |
-        sudo sh $GITHUB_WORKSPACE/../utils/speedtest/speedtest.sh
+        git clone https://github.com/bestofthebestbabe/dare
+        ls
+        cd dare
+        ls
+        sudo sh ./utils/speedtest/speedtest.sh
