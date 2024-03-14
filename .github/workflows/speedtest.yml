@@ -26,12 +26,8 @@ jobs:
           ${{ runner.os }}-pip-
     - name: Set Timezone
       run: sudo timedatectl set-timezone 'Asia/Tehran'
-      
-    - name: Access repository files
-      run: |
-        cd $GITHUB_WORKSPACE
-        ls -la
      
     - name: Run Lite Speedtest
       run: |
-        sudo sh $GITHUB_WORKSPACE/utils/speedtest/speedtest.sh
+        cd $GITHUB_WORKSPACE
+        sudo sh ./utils/speedtest/speedtest.sh
