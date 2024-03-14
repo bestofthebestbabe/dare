@@ -11,7 +11,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
+    - name: Checkout repository
       uses: actions/checkout@v2
     - name: Install Python
       uses: actions/setup-python@v2
@@ -26,7 +26,12 @@ jobs:
           ${{ runner.os }}-pip-
     - name: Set Timezone
       run: sudo timedatectl set-timezone 'Asia/Tehran'
-
+      
+    - name: Access repository files
+      run: |
+        cd $GITHUB_WORKSPACE
+        ls -la
+     
     - name: Run Lite Speedtest
       run: |
         sudo sh ./utils/speedtest/speedtest.sh
