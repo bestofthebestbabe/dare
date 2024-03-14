@@ -32,8 +32,6 @@ jobs:
         git clean -f -d
         git commit -m "done!"
         ls
-        sleep 12
-        cat speedtest.log
         
     - name: Push Change
       uses: ad-m/github-push-action@master
