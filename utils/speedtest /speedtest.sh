@@ -4,4 +4,4 @@ gunzip lite.gz
 wget -O lite_config.json https://raw.githubusercontent.com/bestofthebestbabe/dare/main/utils/speedtest/lite_config.json
 #运行 LiteSpeedTest
 chmod +x ./lite-linux-amd64
-sudo nohup ./lite-linux-amd64 --config ./lite_config.json --test subs >speedtest.log 2>&1 &
+sudo nohup ./lite-linux-amd64 --config ./lite_config.json --test https://raw.githubusercontent.com/bestofthebestbabe/dare/master/configs.txt > speedtest.log 2>&1 &
