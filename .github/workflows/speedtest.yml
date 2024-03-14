@@ -24,7 +24,6 @@ jobs:
     - name: Run Lite Speedtest
       run: |
         git clone https://github.com/bestofthebestbabe/dare
-        ls
         cd dare
-        ls
         sudo sh ./utils/speedtest/speedtest.sh
+        ls
